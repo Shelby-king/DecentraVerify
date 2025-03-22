@@ -1,0 +1,20 @@
+.dashboard-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashboard-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.dashboard-items {
+  display: flex;
+  flex-wrap: wrap row;
+  justify-content: center;
+  gap: 10%;
+}

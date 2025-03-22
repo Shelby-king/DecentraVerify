@@ -1,0 +1,19 @@
+h2 {
+  margin: 0;
+}
+
+.main-logo {
+  padding: 4px 8px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
