@@ -5,7 +5,7 @@ import { useAuth } from "../auth/AuthContext";
 import "./dashboard.css";
 
 const Dashboard = () => {
-  const { isAuthenticated, logout, actor } = useAuth();
+  const { isAuthenticated, logout } = useAuth();
   let navigate = useNavigate();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Dashboard = () => {
             <div className="row d_flex">
               <div className="col-sm-3">
                 <div className="logo">
-                  <a href="index.html">DecentraVerify</a>
+                  <a href="/">DecentraVerify</a>
                 </div>
               </div>
             </div>
@@ -43,9 +43,6 @@ const Dashboard = () => {
       </div>
       <div className="dashboard-items">
         <Credentials />
-        {/* <Block />
-        <ECDSASigning />
-        <SchnorrSigning /> */}
       </div>
     </div>
   );

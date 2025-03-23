@@ -87,7 +87,7 @@ const Login = () => {
             <div className="row d_flex">
               <div className="col-sm-3">
                 <div className="logo">
-                  <a href="index.html">DecentraVerify</a>
+                  <a href="/">DecentraVerify</a>
                 </div>
               </div>
             </div>

@@ -1,8 +1,6 @@
 import Bool "mo:base/Bool";
 import Array "mo:base/Array";
 import Blob "mo:base/Blob";
-// import HashMap "mo:base/HashMap";
-// import { phash; thash } "mo:base/HashMap";
 import HashMap "mo:map/Map";
 import { phash; thash } "mo:map/Map";
 import Iter "mo:base/Iter";
@@ -10,11 +8,9 @@ import Nat "mo:base/Nat";
 import Principal "mo:base/Principal";
 import Text "mo:base/Text";
 import Option "mo:base/Option";
-// import EvmRpc "canister:evm_rpc";
 import IC "ic:aaaaa-aa";
 import Sha256 "mo:sha2/Sha256";
 import Base16 "mo:base16/Base16";
-// import Debug "mo:base/Debug";
 import Cycles "mo:base/ExperimentalCycles";
 
 persistent actor Filevault {
