@@ -4,20 +4,11 @@ import { useAuth } from "../auth/AuthContext";
 import "../index.css";
 import "./credentials.css";
 
-const network = process.env.DFX_NETWORK;
-const identityProvider =
-  network === "ic"
-    ? "https://identity.ic0.app" // Mainnet
-    : "https://identity.ic0.app"; // Local
-
 function Credentials() {
-  //   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  //   const [authClient, setAuthClient] = useState();
-  //   const [actor, setActor] = useState();
   const [files, setFiles] = useState([]);
   const [errorMessage, setErrorMessage] = useState();
   const [fileTransferProgress, setFileTransferProgress] = useState();
-  const { isAuthenticated, logout, actor } = useAuth();
+  const { isAuthenticated, actor } = useAuth();
 
   useEffect(() => {
     // updateActor();
@@ -29,21 +20,6 @@ function Credentials() {
       loadFiles();
     }
   }, [isAuthenticated]);
-
-  //   async function updateActor() {
-  //     const authClient = await AuthClient.create();
-  //     const identity = authClient.getIdentity();
-  //     const actor = createActor(canisterId, {
-  //       agentOptions: {
-  //         identity,
-  //       },
-  //     });
-  //     const isAuthenticated = await authClient.isAuthenticated();
-
-  //     setActor(actor);
-  //     setAuthClient(authClient);
-  //     setIsAuthenticated(isAuthenticated);
-  //   }
 
   async function loadFiles() {
     try {
@@ -72,7 +48,7 @@ function Credentials() {
       return;
     }
     setFileTransferProgress({
-      mode: "Uploading",
+      mode: "Uploading and Signing",
       fileName: file.name,
       progress: 0,
     });
@@ -203,10 +179,7 @@ function Credentials() {
 
           <div className="space-y-2">
             {files.length === 0 ? (
-              <p
-                style={{ height: "50vh" }}
-                className="py-8 text-center text-gray-500"
-              >
+              <p className="py-8 text-center text-gray-500">
                 You have no files. Upload some!
               </p>
             ) : (

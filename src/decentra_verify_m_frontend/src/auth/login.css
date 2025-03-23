@@ -50,6 +50,7 @@ body {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -315,6 +316,9 @@ ul.social_icon li a:hover {
 .banner_main {
   padding-bottom: 90px;
   padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-indicators {

@@ -15,9 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<Login />} />
         </Routes>
-        {/* <Block />
-            <ECDSASigning />
-            <SchnorrSigning /> */}
       </BrowserRouter>
     </AuthProvider>
   </React.StrictMode>
