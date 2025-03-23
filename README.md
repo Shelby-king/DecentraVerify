@@ -32,6 +32,9 @@ dfx canister --help
 
 ## ローカル環境でのプロジェクト実行
 
+### システム要件
+⚠️ 注意: DecentraVerify は現在 Windows をサポートしていません。開発環境は Linux および macOS のみで利用可能です。Windows を使用している場合は、WSL（Windows Subsystem for Linux） または Linux ディストリビューションを搭載した仮想マシンを使用することを検討してください。
+
 DecentraVerify をローカルでテストし、オンチェーン資格検証の仕組みを確認するには、以下のコマンドを使用してください。
 
 ```bash
