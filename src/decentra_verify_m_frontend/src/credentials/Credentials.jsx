@@ -203,7 +203,10 @@ function Credentials() {
 
           <div className="space-y-2">
             {files.length === 0 ? (
-              <p className="py-8 text-center text-gray-500">
+              <p
+                style={{ height: "50vh" }}
+                className="py-8 text-center text-gray-500"
+              >
                 You have no files. Upload some!
               </p>
             ) : (
@@ -212,13 +215,6 @@ function Credentials() {
                   key={file.name}
                   className="flex items-center justify-between rounded-lg bg-white p-3 shadow"
                 >
-                  {/* <div className="flex items-center space-x-2">
-                    <span>
-                      File Name: {file.name} <br /> File ECDSA Signing:{" "}
-                      {file.ecdsa_sign} <br /> File Schnorr Sign:{" "}
-                      {file.schnorr_sign}{" "}
-                    </span>
-                  </div> */}
                   <Card
                     key={index}
                     name={file.name}
@@ -227,20 +223,6 @@ function Credentials() {
                     onDownload={handleFileDownload}
                     onDelete={handleFileDelete}
                   />
-                  {/* <div className="flex space-x-2">
-                    <button
-                      onClick={() => handleFileDownload(file.name)}
-                      className="btn"
-                    >
-                      Download
-                    </button>
-                    <button
-                      onClick={() => handleFileDelete(file.name)}
-                      className="btn"
-                    >
-                      Delete
-                    </button>
-                  </div> */}
                 </div>
               ))
             )}

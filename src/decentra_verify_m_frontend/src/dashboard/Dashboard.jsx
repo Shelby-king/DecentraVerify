@@ -16,10 +16,24 @@ const Dashboard = () => {
 
   return (
     <div>
+      {/* Header */}
+      <header>
+        <div className="head-top">
+          <div className="container-fluid">
+            <div className="row d_flex">
+              <div className="col-sm-3">
+                <div className="logo">
+                  <a href="index.html">DecentraVerify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onClick={logout}>Logout</button>
+      </header>
       <div className="dashboard-header">
         <div className="dashboard-nav">
           <h2>Dashboard</h2>
-          <button onClick={logout}>Logout</button>
         </div>
         {isAuthenticated ? (
           <p>Welcome to the dashboard!</p>
