@@ -1,5 +1,14 @@
 # `DecentraVerify`
 
+## *Project Overview*
+DecentraVerify is a web3 dApp that leverages the Internet Computer (ICP) to provide secure, decentralized credential storage and veriification. It eliminates credential fraud by ensuring tamper-proof, on-chain validation.
+
+Built for Universities, Employers & Institutions - Instaantly verify degrees,certfications, and professional credentials.
+
+Secure & Permissionless - No reliance on centralized databases, reducing risk of fraud and data breaches.
+
+ICP-Powered - Utilizes Motoko-based smart contracts for seamless blockchain integration.
+
 A decentralized app for storing and verifying credentials on the ICP blockchain.
 
 Welcome to your new `DecentraVerify` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
@@ -23,7 +32,7 @@ dfx canister --help
 
 ## Running the project locally
 
-If you want to test your project locally, you can use the following commands:
+If you want to test DecentraVerify locally and explore how on-chain credential verification works, use the following commands:
 
 ```bash
 # Starts the replica, running in the background
@@ -50,6 +59,13 @@ npm start
 ```
 
 Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+
+## *Future Enhancements*
+Multi-Blockchain Integration - Expansion to Ethereum, Solana, & Polkadot for wider adoption.
+
+Decentralized Organization Management - Institutions can issue & revoke credentials using smart contracts.
+
+Mobile-Friendly Interface - Optimized for mobile users & digital credential sharing.
 
 ### Note on frontend environment variables
 
